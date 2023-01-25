@@ -1,10 +1,11 @@
-// const app =require('http')
+const express=require("express");
+const app=express();
 
-// app.createServer((req,res)=>{
-//        res.write("yash");
-//        res.end();
-// }).listen(3000)
+app.get("/" ,(req,res)=>{
+    res.send("hi yash")
+})
 
+app.listen(5000)
 
 
 
